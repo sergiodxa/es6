@@ -1,4 +1,2 @@
-'use strict';
 
-var nombre = 'Don Pepito';
-console.log('Hola ' + nombre);
+'use strict';var nombre='Don Pepito';console.log('Hola '+nombre);

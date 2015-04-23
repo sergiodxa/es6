@@ -1,6 +1,2 @@
-'use strict';
 
-var saludar = function saludar() {
-  return 'Hola Don Pepito';
-};
-console.log(saludar()); // 'Hola Don Pepito';
+'use strict';var saludar=function saludar(){return'Hola Don Pepito';};console.log(saludar());
