@@ -25,7 +25,7 @@
 <body>
   <header>
     <h1>ECMAScript 6: el futuro de JavaScript</h1>
-    <a href="//twitter.com/sergiodxa">@sergiodxa</a>
+    <a href="//twitter.com/sergiodxa" target="_blank" rel="author">@sergiodxa</a>
   </header>
 
   <main class="presentacion language-bash">
@@ -43,17 +43,17 @@
       <article>
         <h3>Babel.js</h3>
         <figure>
-          <img src="http://babeljs.io/images/logo.svg" alt="babeljs" style="max-width:550px;width:100%;" />
+          <img src="//babeljs.io/images/logo.svg" alt="Babel.js logo" style="max-width:550px;width:100%;"  target="_blank"/>
         </figure>
         <p>
-          <a href="http://babeljs.io/">Babel.js</a> es un transpiler que permite convertír código de ECMAScript 6 a código legible de ECMAScript 5 compatible con la mayoría de navegadores modernos.
+          <a href="//babeljs.io/" target="_blank">Babel.js</a> es un transpiler que permite convertír código de ECMAScript 6 a código legible de ECMAScript 5 compatible con la mayoría de navegadores modernos.
         </p>
       </article>
 
       <article>
         <h3>Instalando Babel.js</h3>
         <p>
-          Para poder usarlo lo primero es instalarlo, para esto necesitamos tener <a href="//nodejs.org/">Node.js</a> o <a href="//iojs.org/">io.js</a> instalado en nuestra computadora.
+          Para poder usarlo lo primero es instalarlo, para esto necesitamos tener <a href="//nodejs.org/" target="_blank">Node.js</a> o <a href="//iojs.org/" target="_blank">io.js</a> instalado en nuestra computadora.
         </p>
         <p>Una vez instalado <strong>node</strong> (desde acá voy a usar node para referirme a io.js y Node.js) usando <abbr title="Ninja Pokémon Master">NPM</abbr> instalamos Babel.js de forma global con el comando</p>
         <pre><code>sudo npm i -g babel</code></pre>
@@ -73,7 +73,7 @@
       <article>
         <h3>Usando Babel con Browserify</h3>
         <p>
-          Babel se puede utilizar con <a href="https://www.npmjs.com/package/browserify">Browserify</a> gracias a un plugin de este llamado <a href="https://www.npmjs.com/package/babelify">Babelify</a>, para esto simplemente instalan Browserify y Babel como dependencia de desarrollo de su proyecto con el siguiente comando.
+          Babel se puede utilizar con <a href="//www.npmjs.com/package/browserify" target="_blank">Browserify</a> gracias a un plugin de este llamado <a href="//www.npmjs.com/package/babelify" target="_blank">Babelify</a>, para esto simplemente instalan Browserify y Babel como dependencia de desarrollo de su proyecto con el siguiente comando.
         </p>
         <pre><code>[sudo] npm i -D browserify babelify</code></pre>
         <p>
@@ -83,6 +83,25 @@
         <p>
           Esto va a convertír nuestro código ES6 a ES5, generar un único archivo a partír de nuestro main.js ubicado en la carpeta <em>src</em>, cargar los módulos que hayamos requerido desde <em>node_modules</em> y crear un único archivo ES5 en la carpeta <em>build</em>.
         </p>
+      </article>
+
+      <article>
+        <h3>Usando Babel con Gulp</h3>
+        <p>
+          Babel también se puede utilizar con <a href="//gulpjs.com/" target="_blank">Gulp.js</a> utilizando el plugin <a href="//www.npmjs.com/package/gulp-babel" target="_blank">gulp-babel</a>, para esto descargan Gulp.js y gulp-babel con el siguiente comando.
+        </p>
+        <pre><code>[sudo] npm i -D gulp gulp-babel</code></pre>
+        <p>
+          Luego creamos una tarea de Gulp en nuestro archivo gulpfile.js en la raíz del proyecto en la cual leemos los archivos en ES6, ejecutamos gulp-babel y luego guardamos los archivos generados en otra carpeta.
+        </p>
+        <pre class="language-javascript"><code>var gulp  = require('gulp');
+var babel = require('gulp-babel');
+
+gulp.task('js', function () {
+  gulp.src('/src/es6/*.js')
+    .pipe(babel())
+    .pipe(gulp.dest('/build/js/'));
+});</code></pre>
       </article>
     </section>
 
@@ -183,93 +202,93 @@
         </p>
         <ul>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh" target="_blank">
               .acosh()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asin" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asin" target="_blank">
               .asinh()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atanh" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atanh" target="_blank">
               .atanh()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt" target="_blank">
               .cbrt()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32" target="_blank">
               .clz32()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cosh" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cosh" target="_blank">
               .cosh()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/expm1" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/expm1" target="_blank">
               .exp1m()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fround" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fround" target="_blank">
               .fround()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot" target="_blank">
               .hypot()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/imul" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/imul" target="_blank">
               .imul()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log10" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log10" target="_blank">
               .log10()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log1p" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log1p" target="_blank">
               .log1p()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2" target="_blank">
               .log2()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign" target="_blank">
               .sign()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh" target="_blank">
               .sinh()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tanh" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tanh" target="_blank">
               .tanh()
             </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc" target="_blank">
+            <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc" target="_blank">
               .trunc()
             </a>
           </li>
         </ul>
         <p>
-          No puse ejemplos porque son muchos y se pueden ver en <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a>.
+          No puse ejemplos porque son muchos y se pueden ver en <a href="//developer.mozilla.org/en-US/">Mozilla Developer Network</a>.
         </p>
       </article>
     </section>
@@ -282,7 +301,7 @@
           Este nuevo método del objeto Array permite crear un array copiando otro array o un NodeList.
         </p>
         <p>
-          Es posible utilizarlos actualmente mediantes <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Polyfill" target="_blank">polyfills</a>.
+          Es posible utilizarlos actualmente mediantes <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Polyfill" target="_blank">polyfills</a>.
         </p>
         <pre data-src="examples/es6/array.from.js"></pre>
         <button type="button" data-src="examples/es5/array.from.js">
@@ -296,13 +315,13 @@
           Además de .from() se agregaron los siguientes métodos:
         </p>
         <ul>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of">.of()</a>: crea un nuevo array con un número variado de elementos</li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill">.fill()</a>: llena un array con un nuevo valor en cada elemento</li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find">.find()</a>: busca un elemento dentro de un array y devuelve el valor</li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex">.findIndex()</a>: similar a .find() pero devuelve el índice</li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries">.entries()</a>: devuelve una instancia del objeto Iterator que contiene cada índice y valor del array</li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys">.keys()</a>: similar a .entries() pero el Iterator solo muestra los índices</li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin">.copyWithin()</a>: copia los elementos de un array en las posiciones indicadas</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of">.of()</a>: crea un nuevo array con un número variado de elementos</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill">.fill()</a>: llena un array con un nuevo valor en cada elemento</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find">.find()</a>: busca un elemento dentro de un array y devuelve el valor</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex">.findIndex()</a>: similar a .find() pero devuelve el índice</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries">.entries()</a>: devuelve una instancia del objeto Iterator que contiene cada índice y valor del array</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys">.keys()</a>: similar a .entries() pero el Iterator solo muestra los índices</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin">.copyWithin()</a>: copia los elementos de un array en las posiciones indicadas</li>
         </ul>
       </article>
     </section>
@@ -318,7 +337,7 @@
           Esta propiedad es muy útil para realizar herencia entre objetos.
         </p>
         <p>
-          Este método se puede utilizar ya gracias a un <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign" target="_blank">polyfill</a>
+          Este método se puede utilizar ya gracias a un <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign" target="_blank">polyfill</a>
         </p>
         <pre data-src="examples/es6/object.assign.js"></pre>
         <button type="button" data-src="examples/es5/object.assign.js">
@@ -348,7 +367,7 @@
           </li>
         </ul>
         <p>
-          Al igual que .assign() se puede utilizar ya mismo mediante un <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is" target="_blank">polyfill</a>.
+          Al igual que .assign() se puede utilizar ya mismo mediante un <a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is" target="_blank">polyfill</a>.
         </p>
         <pre data-src="examples/es6/object.is.js"></pre>
         <button type="button" data-src="examples/es5/object.is.js">
@@ -490,7 +509,7 @@
       <h2>Promesas</h2>
       <article>
         <p>
-          Las promesas es algo que se viene usando ya desde hace un par de años gracias a librerías como <a href="http://documentup.com/kriskowal/q/" target="_blank">Q</a>.
+          Las promesas es algo que se viene usando ya desde hace un par de años gracias a librerías como <a href="//documentup.com/kriskowal/q/" target="_blank">Q</a>.
         </p>
         <p>
           En ES6 las promesas van a pasar a tener soporte nativo del lenguaje con una sintaxis bastante simple.
@@ -509,7 +528,7 @@
           Los generadores son un tipo de función especial que permite parar la ejecución de la misma y devolver un valor, para luego poder seguír ejecutándola.
         </p>
         <pre data-src="examples/es6/generators.js"></pre>
-        <a href="http://babeljs.io/repl/#?experimental=true&evaluate=true&loose=true&spec=false&playground=false&code=function*%20fibonacci()%20%7B%0A%20%20let%20anterior%20%3D%200%2C%20actual%20%3D%201%3B%0A%20%20while(true)%20%7B%0A%20%20%20%20let%20temp%20%3D%20anterior%3B%0A%20%20%20%20anterior%20%3D%20actual%3B%0A%20%20%20%20actual%20%2B%3D%20temp%3B%0A%20%20%20%20yield%20actual%3B%0A%20%20%7D%0A%7D%0A%0Alet%20fibo%20%3D%20fibonacci()%3B%0A%0Afor%20(let%20i%20%3D%200%3B%20i%20%3C%205%3B%20i%2B%2B)%20%7B%0A%20%20console.log(fibo.next())%3B%20%2F%2F%20%7B%20value%3A%20n%2C%20done%3A%20false%20%7D%0A%7D" target="_blank" class="button">
+        <a href="//babeljs.io/repl/#?experimental=true&evaluate=true&loose=true&spec=false&playground=false&code=function*%20fibonacci()%20%7B%0A%20%20let%20anterior%20%3D%200%2C%20actual%20%3D%201%3B%0A%20%20while(true)%20%7B%0A%20%20%20%20let%20temp%20%3D%20anterior%3B%0A%20%20%20%20anterior%20%3D%20actual%3B%0A%20%20%20%20actual%20%2B%3D%20temp%3B%0A%20%20%20%20yield%20actual%3B%0A%20%20%7D%0A%7D%0A%0Alet%20fibo%20%3D%20fibonacci()%3B%0A%0Afor%20(let%20i%20%3D%200%3B%20i%20%3C%205%3B%20i%2B%2B)%20%7B%0A%20%20console.log(fibo.next())%3B%20%2F%2F%20%7B%20value%3A%20n%2C%20done%3A%20false%20%7D%0A%7D" target="_blank" class="button">
           Ejecutar
         </a>
       </article>
@@ -658,6 +677,34 @@
           La forma asíncrona tiene dos variantes, una que es la más simple, para cargar un solo módulo, la otra que requiere el uso de promesas permite cargar múltiples módulos de forma asíncrona.
         </p>
         <pre data-src="examples/es6/module-import-async.js"></pre>
+      </article>
+    </section>
+
+    <section>
+      <h2>Symbols</h2>
+      <article>
+        <h3>Creando y usando un Symbol</h3>
+        <p>
+          Los Symbol son un nuevo tipo de <a href="//javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/" target="_blank">primitivo</a> inmutable pensado para ser usado principalmente como identificado de las propiedades de un objeto.
+        </p>
+        <p>
+          Con la incorporación de los Symbol las propiedades de un objeto ahora se podrán acceder tanto con comillas como sin comillas.
+        </p>
+        <pre data-src="examples/es6/symbol.js"></pre>
+        <button type="button" data-src="examples/es5/symbol.js">
+          Ejecutar
+        </button>
+      </article>
+
+      <article>
+        <h3>Symbol.for()</h3>
+        <p>
+          El objeto Symbol (usado para crear un nuevo primitivo Symbol) posee un método llamado .for(). Este método tiene dos usos, el primero es la creación de un nuevo Symbol, sin necesidad de asignar a una variable, el segundo es encontrar un Symbol ya creado.
+        </p>
+        <pre data-src="examples/es6/symbol.for.js"></pre>
+        <button type="button" data-src="examples/es5/symbol.for.js">
+          Ejecutar
+        </button>
       </article>
     </section>
   </main>
