@@ -1,0 +1,2 @@
+
+'use strict';var persona={nombre:'Jose'};Object.observe(persona,function(changes){changes.forEach(function(change){return console.log(change);});});persona.nombre='Pepito';persona.honorifico='Don';delete persona.nombre;

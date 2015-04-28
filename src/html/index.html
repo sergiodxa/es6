@@ -134,7 +134,9 @@ gulp.task('js', function () {
           Las constantes también tienen un scope de bloque.
         </p>
         <pre data-src="examples/es6/constants.js"></pre>
-        <button type="button" data-src="examples/es6/constants.js">Ejecutar</button>
+        <button type="button" data-src="examples/es6/constants.js">
+          Ejecutar (solo Google Chrome)
+        </button>
       </article>
     </section>
 
@@ -704,6 +706,48 @@ gulp.task('js', function () {
         <pre data-src="examples/es6/symbol.for.js"></pre>
         <button type="button" data-src="examples/es5/symbol.for.js">
           Ejecutar
+        </button>
+      </article>
+    </section>
+
+    <section>
+      <h2>ECMAScript 7: El futuro no tan lejano</h2>
+      <article>
+        <p>
+          Ya desde el año pasado están en desarrollo algunas de las nuevas características que va a traer ECMAScript 7 la próxima versión de ES y de JS que en teoría debería estar lista en algún momento del año que viene (2016).
+        </p>
+      </article>
+
+      <article>
+        <h3>Object.observe() (draft)</h3>
+        <p>
+          Object.observe() (también llamado O.o()) es un nuevo método del objeto Object que permite realizar un single-way data-binding de un objeto de JavaScript. Este nuevo método es utilizado internamente por Polymer gracias a un polyfill.
+        </p>
+        <p>
+          <a href="//www.html5rocks.com/en/tutorials/es7/observe/" target="_blank">
+            Data-binding Revolutions with Object.observe() - HTML5 Rocks
+          </a>
+        </p>
+        <p>
+          ¡Esta característica ya funciona en Google Chrome, Node.js e io.js!
+        </p>
+        <pre data-src="examples/es7/object.observe.js"></pre>
+        <button type="button" data-src="examples/es5/object.observe.js">
+          Ejecutar (solo Google Chrome)
+        </button>
+      </article>
+
+      <article>
+        <h3>Comas extras en parámetros de función (proposal)</h3>
+        <p>
+          En ES7 (y Babel ya tiene soporte) va a ser posible colocar una coma al final del último parámetro de una función (tanto al definir la función como al usarla) y que esta siga ejecutandose correctamente.
+        </p>
+        <p>
+          Esta característica haría los parámetros de funciones más consistentes con los objetos y arrays y facilitaría la generación automática de código (además que aunque parezca raro en varios lenguajes se usa).
+        </p>
+        <pre data-src="examples/es7/trailing-commas.js"></pre>
+        <button type="button" data-src="examples/es5/trailing-commas.js">
+          Ejecutar (solo Google Chrome)
         </button>
       </article>
     </section>
