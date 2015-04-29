@@ -55,12 +55,14 @@ h4 {
 main {}
 
 section {
+  clear: both;
   padding: 1em;
   margin: 0 auto;
   max-width: 960px;
 }
 
 article {
+  clear: both;
   margin-bottom: 1em;
 }
 article:last-of-type { margin-bottom: 0; }
