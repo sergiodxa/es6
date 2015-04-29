@@ -20,9 +20,9 @@ header {
 header a {
   color: #222;
   display: block;
+  font-weight: bold;
   line-height: 3em;
   padding: 0 1em;
-  font-weight: bold;
 }
 @media (max-width: 450px) {
   header a {
@@ -38,15 +38,35 @@ h1 {
 }
 
 h2 {
+  border-bottom: 1px solid #222;
+  cursor: pointer;
   font-size: 2em;
   margin: .25em -.25em 1em;
-  border-bottom: 1px solid #222;
+  position: relative;
+}
+h2 > a { color: black; }
+h2 > a:hover { text-decoration: none; }
+
+h2:before {
+  color: #F5DA55;
+  content: '#';
+  display: none;
+  padding-right: .25em;
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+
+h2.active:before,
+h2:hover:before {
+  display: block;
 }
 
 h3 {
   font-size: 1.5em;
   margin: 0;
 }
+
 h4 {
   font-size: 1em;
   margin: .25em .5em 0;
@@ -56,9 +76,9 @@ main {}
 
 section {
   clear: both;
-  padding: 1em;
   margin: 0 auto;
   max-width: 960px;
+  padding: 1em;
 }
 
 article {
@@ -75,13 +95,11 @@ figure {
 }
 
 ul {
-  list-style-type: square;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: square;
 }
-li {
-  flex-basis: 100%;
-}
+li { flex-basis: 100%; }
 
 .button,
 button {
