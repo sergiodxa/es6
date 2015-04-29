@@ -20,9 +20,17 @@
 
   });
 
+  $('h2').on('click', function (e) {
+    e.preventDefault();
+
+    location.hash = $(this).attr('id');
+
+    markActive();
+  });
+
   // show github fork ribbon
-  var content = document.querySelector('link[rel="import"]').import.querySelector('.github-fork-ribbon-wrapper');
-  $(content).appendTo('body');
+  var ribbon = document.querySelector('#gh-fork-ribbon').import.querySelector('.github-fork-ribbon-wrapper');
+  $(ribbon).appendTo('body');
 
   // google analytics code
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -32,5 +40,16 @@
 
   ga('create', 'UA-48432002-8', 'auto');
   ga('send', 'pageview');
+
+  function markActive() {
+    var hash = location.hash;
+
+    if (hash) {
+      $('h2').removeClass('active');
+      $(hash).addClass('active');
+    }
+  }
+
+  markActive();
 
 })();

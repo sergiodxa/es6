@@ -20,7 +20,7 @@
   <!-- viewport -->
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <!-- import ribbon -->
-  <link rel="import" href="gh-fork-ribbon.html" />
+  <link rel="import" href="gh-fork-ribbon.html" id="gh-fork-ribbon" />
 </head>
 <body>
   <header>
@@ -30,7 +30,12 @@
 
   <main class="presentacion language-bash">
     <section>
-      <h2>¿Qué es ECMAScript 6?</h2>
+      <h2 id="que-es-es6">
+        <a href="#que-es-es6">
+          ¿Qué es ECMAScript 6?
+        </a>
+      </h2>
+
       <article>
         <p>
           ECMAScript 6 es la nueva versión del lenguaje estandar ECMAScript que va a estar terminada en Junio de este año (2015). ES6 es la primer actualización al lenguaje desde que en 2008 salio ECMAScript 5.
@@ -39,7 +44,12 @@
     </section>
 
     <section>
-      <h2>Usando ECMAScript 6 hoy</h2>
+      <h2 id="usando-es6-hoy">
+        <a href="#usando-es6-hoy">
+          Usando ECMAScript 6 hoy
+        </a>
+      </h2>
+
       <article>
         <h3>Babel.js</h3>
         <figure>
@@ -106,7 +116,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Variables de bloque y constantes</h2>
+      <h2 id="variables-bloque-constantes">
+        <a href="#variables-bloque-constantes">
+          Variables de bloque y constantes
+        </a>
+      </h2>
+
       <article>
         <h3>Variables de bloque</h3>
         <p>
@@ -141,7 +156,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Template strings</h2>
+      <h2 id="template-strings">
+        <a href="#template-strings">
+          Template strings
+        </a>
+      </h2>
+
       <article>
         <p>
           Los template string son una forma más fácil de crear strings con variables en medio del string o strings multilínea.
@@ -172,7 +192,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Números en Octal y Binario</h2>
+      <h2 id="numeros-octal-binario">
+        <a href="numeros-octal-binario">
+          Números en Octal y Binario
+        </a>
+      </h2>
+
       <article>
         <h3>Números en Octal</h3>
         <p>
@@ -197,7 +222,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Objeto Math</h2>
+      <h2 id="objeto-math">
+        <a href="objeto-math">
+          Objeto Math
+        </a>
+      </h2>
+
       <article>
         <p>
           En ES6 se agregan una lista de nuevos métodos al objeto Math, casi todos ya están soportados desde hace un par de años en los navegadores.
@@ -290,13 +320,18 @@ gulp.task('js', function () {
           </li>
         </ul>
         <p>
-          No puse ejemplos porque son muchos y se pueden ver en <a href="//developer.mozilla.org/en-US/">Mozilla Developer Network</a>.
+          No puse ejemplos porque son muchos y se pueden ver en <a href="//developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network</a>.
         </p>
       </article>
     </section>
 
     <section>
-      <h2>Métodos de Arrays</h2>
+      <h2 id="metodos-array">
+        <a href="metodos-array">
+          Métodos de Arrays
+        </a>
+      </h2>
+
       <article>
         <h3>Array.from(array, mapFn)</h3>
         <p>
@@ -317,19 +352,24 @@ gulp.task('js', function () {
           Además de .from() se agregaron los siguientes métodos:
         </p>
         <ul>
-          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of">.of()</a>: crea un nuevo array con un número variado de elementos</li>
-          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill">.fill()</a>: llena un array con un nuevo valor en cada elemento</li>
-          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find">.find()</a>: busca un elemento dentro de un array y devuelve el valor</li>
-          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex">.findIndex()</a>: similar a .find() pero devuelve el índice</li>
-          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries">.entries()</a>: devuelve una instancia del objeto Iterator que contiene cada índice y valor del array</li>
-          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys">.keys()</a>: similar a .entries() pero el Iterator solo muestra los índices</li>
-          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin">.copyWithin()</a>: copia los elementos de un array en las posiciones indicadas</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of" target="_blank">.of()</a>: crea un nuevo array con un número variado de elementos</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill" target="_blank">.fill()</a>: llena un array con un nuevo valor en cada elemento</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find" target="_blank">.find()</a>: busca un elemento dentro de un array y devuelve el valor</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex" target="_blank">.findIndex()</a>: similar a .find() pero devuelve el índice</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries" target="_blank">.entries()</a>: devuelve una instancia del objeto Iterator que contiene cada índice y valor del array</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys" target="_blank">.keys()</a>: similar a .entries() pero el Iterator solo muestra los índices</li>
+          <li><a href="//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin" target="_blank">.copyWithin()</a>: copia los elementos de un array en las posiciones indicadas</li>
         </ul>
       </article>
     </section>
 
     <section>
-      <h2>Métodos de Object</h2>
+      <h2 id="metodos-object">
+        <a href="metodos-object">
+          Métodos de Object
+        </a>
+      </h2>
+
       <article>
         <h3>Object.assign(objetivo, ...objs)</h3>
         <p>
@@ -379,7 +419,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Forma abreviada de definición de Objetos</h2>
+      <h2 id="definicion-abreviada-objetos">
+        <a href="definicion-abreviada-objetos">
+          Forma abreviada de definición de Objetos
+        </a>
+      </h2>
+
       <article>
         <h3>Asignación de propiedades</h3>
         <p>
@@ -404,7 +449,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Asignación por descomposición</h2>
+      <h2 id="asignacion-descomposicion">
+        <a href="#asignacion-descomposicion">
+          Asignación por descomposición
+        </a>
+      </h2>
+
       <article>
         <p>
           Si ya dijimos que con ES6 nos es más fácil crear objetos usando variables, también nos vas a ser más fácil hacer lo contrarios, descomponer un objeto (o un array) en variables
@@ -417,7 +467,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Parámetros por defecto</h2>
+      <h2 id="parametros-default">
+        <a href="parametros-default">
+          Parámetros por defecto
+        </a>
+      </h2>
+
       <article>
         <p>
           Algo que siempre falto en JS al momento de definir funciones eran los parámetros con valores por defecto, siendo la única forma de lograr esto redefinir el valor de un parámetro con el mismo parámetro o el valor por defecto (no muy optimo que digamos).
@@ -433,7 +488,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Arrow functions</h2>
+      <h2 id="arrow-functions">
+        <a href="#arrow-functions">
+          Arrow functions
+        </a>
+      </h2>
+
       <article>
         <p>
           Arrow function es una nueva forma de definir funciones en JS similar a como hace CoffeeScript.
@@ -492,7 +552,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Parámetros rest</h2>
+      <h2 id="parametros-rest">
+        <a href="#parametros-rest">
+          Parámetros rest
+        </a>
+      </h2>
+
       <article>
         <p>
           Los parámetros rest son una forma de utilizar parámetros virtualmente infinitos (nunca supe de ningún límite) en una función que vendría a substituír al array arguments que tienen actualmente las funciones.
@@ -508,7 +573,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Promesas</h2>
+      <h2 id="promesas">
+        <a href="#promesas">
+          Promesas
+        </a>
+      </h2>
+
       <article>
         <p>
           Las promesas es algo que se viene usando ya desde hace un par de años gracias a librerías como <a href="//documentup.com/kriskowal/q/" target="_blank">Q</a>.
@@ -524,7 +594,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Generadores</h2>
+      <h2 id="generadores">
+        <a href="#generadores">
+          Generadores
+        </a>
+      </h2>
+
       <article>
         <p>
           Los generadores son un tipo de función especial que permite parar la ejecución de la misma y devolver un valor, para luego poder seguír ejecutándola.
@@ -537,7 +612,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Iterators y for...of</h2>
+      <h2 id="iterator-for-of">
+        <a href="#iterator-for-of">
+          Iterators y for...of
+        </a>
+      </h2>
+
       <article>
         <h3>Iterators</h3>
         <p>
@@ -565,7 +645,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Proxies</h2>
+      <h2 id="proxies">
+        <a href="#proxies">
+          Proxies
+        </a>
+      </h2>
+
       <article>
         <p>
           Los proxies de ES6 te permiten interceptar y personalizar las distintas operaciones que se pueden realizar en un objeto.
@@ -575,7 +660,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Clases</h2>
+      <h2 id="clases">
+        <a href="#clases">
+          Clases
+        </a>
+      </h2>
+
       <article>
         <p>
           Desde ES6 se incorporan al lenguaje clases para poder hacer POO más facilmente (sin prototype). Las clases de ES6 son solo un syntax sugar de la como se hace actualmente con prototype.
@@ -628,7 +718,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Módulos</h2>
+      <h2 id="modulos">
+        <a href="#modulos">
+          Módulos
+        </a>
+      </h2>
+
       <article>
         <p>
           Desde ES6 vamos a tener un sistema nativo de módulos que viene a sustituir a los actuales CommonJS, AMD, etc.
@@ -683,11 +778,16 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>Symbols</h2>
+      <h2 id="symbols">
+        <a href="#symbols">
+          Symbols
+        </a>
+      </h2>
+
       <article>
         <h3>Creando y usando un Symbol</h3>
         <p>
-          Los Symbol son un nuevo tipo de <a href="//javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/" target="_blank">primitivo</a> inmutable pensado para ser usado principalmente como identificado de las propiedades de un objeto.
+          Los Symbol son un nuevo tipo de <a href="//javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/" target="_blank">primitivo</a> inmutable pensado para ser usado principalmente como identificador de las propiedades de un objeto.
         </p>
         <p>
           Con la incorporación de los Symbol las propiedades de un objeto ahora se podrán acceder tanto con comillas como sin comillas.
@@ -711,7 +811,12 @@ gulp.task('js', function () {
     </section>
 
     <section>
-      <h2>ECMAScript 7: El futuro no tan lejano</h2>
+      <h2 id="es7-el-futuro">
+        <a href="#es7-el-futuro">
+          ECMAScript 7: El futuro no tan lejano
+        </a>
+      </h2>
+
       <article>
         <p>
           Ya desde el año pasado están en desarrollo algunas de las nuevas características que va a traer ECMAScript 7 la próxima versión de ES y de JS que en teoría debería estar lista en algún momento del año que viene (2016).
@@ -749,6 +854,17 @@ gulp.task('js', function () {
         <button type="button" data-src="examples/es5/trailing-commas.js">
           Ejecutar (solo Google Chrome)
         </button>
+      </article>
+
+      <article>
+        <h3>Funciones asíncronas</h3>
+        <p>
+          En ES6 se incorpora un nuevo tipo de función llamada función asíncrona. Estas se crean agregando la palabra async antes de function al momento de definirla.
+        </p>
+        <p>
+          Una función definida como asíncrona permite realizar cualquier tarea asíncrona (una petición HTTP por ejemplo) y esperar (await) hasta que se obtenga la respuesta para seguír con el código.
+        </p>
+        <pre data-src="examples/es7/async-functions.js"></pre>
       </article>
     </section>
   </main>
