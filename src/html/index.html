@@ -785,9 +785,15 @@ gulp.task('js', function () {
       </h2>
 
       <article>
-        <h3>Creando y usando un Symbol</h3>
+        <h3>Introducción</h3>
         <p>
           Los Symbol son un nuevo tipo de <a href="//javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/" target="_blank">primitivo</a> inmutable pensado para ser usado principalmente como identificador de las propiedades de un objeto.
+        </p>
+      </article>
+
+      <article>
+        <h3>Creando y usando un Symbol</h3>
+        <p>
         </p>
         <p>
           Con la incorporación de los Symbol las propiedades de un objeto ahora se podrán acceder tanto con comillas como sin comillas.
@@ -805,6 +811,17 @@ gulp.task('js', function () {
         </p>
         <pre data-src="examples/es6/symbol.for.js"></pre>
         <button type="button" data-src="examples/es5/symbol.for.js">
+          Ejecutar
+        </button>
+      </article>
+
+      <article>
+        <h3>Usandolos para propiedades privadas</h3>
+        <p>
+          Un posible uso de los Symbol es para poder crear propiedades semi-privadas en object literals.
+        </p>
+        <pre data-src="examples/es6/symbol-private-props.js"></pre>
+        <button type="button" data-src="examples/es5/symbol-private-props.js">
           Ejecutar
         </button>
       </article>
