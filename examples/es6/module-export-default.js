@@ -1,7 +1,7 @@
-class Persona{
+class Persona {
   constructor(nombre) {
     this.honorifico = 'Don';
-    this.nombre = nombre;
+    this.nombre     = nombre;
   }
   saludar(persona) {
     return `Hola ${persona.honorifico} ${persona.nombre}`;

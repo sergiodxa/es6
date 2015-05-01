@@ -1,1 +1,1 @@
-console.log(0b1001); // 9
+console.log(0b1001);

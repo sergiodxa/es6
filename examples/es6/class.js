@@ -9,7 +9,7 @@ class Persona{
 }
 
 let Pepito = new Persona('Pepito');
-let Jose = new Persona('Jose');
+let Jose   = new Persona('Jose');
 
-console.log(Jose.saludar(Pepito)); // 'Hola Don Pepito'
-console.log(Pepito.saludar(Jose)); // 'Hola Don Jose'
+console.log(Jose.saludar(Pepito));
+console.log(Pepito.saludar(Jose));

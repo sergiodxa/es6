@@ -10,4 +10,4 @@ class calculadora {
   }
 }
 
-console.log(calculadora.sumar(1,2,3)); // 6
+console.log(calculadora.sumar(1,2,3));

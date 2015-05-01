@@ -13,6 +13,6 @@ class Persona {
 }
 
 let Pepito = new Persona('Pepito');
-console.log(Pepito.nombre); // 'Pepito'
+console.log(Pepito.nombre);
 Pepito.nombre = 'Don Pepito';
-console.log(Pepito.nombre); // 'Don Pepito'
+console.log(Pepito.nombre);

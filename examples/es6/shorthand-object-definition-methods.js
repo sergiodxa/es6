@@ -3,4 +3,4 @@ let pepito = {
     return `Hola ${persona.honorifico} ${persona.nombre}`;
   }
 }
-console.log(pepito.saludar({ nombre:'Jose', honorifico:'Don' })); // 'Hola Don Jose'
+console.log(pepito.saludar({ nombre:'Jose', honorifico:'Don' }));

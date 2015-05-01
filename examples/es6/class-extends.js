@@ -18,4 +18,4 @@ class Bulldog extends Perro {
   }
 }
 let Tronco = new Bulldog('Tronco');
-console.log(Tronco.comer()); // Tronco está comiendo
+console.log(Tronco.comer());
