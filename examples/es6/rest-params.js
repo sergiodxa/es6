@@ -7,7 +7,7 @@ function sumar (a, b, ...c) {
 
   return resultado;
 }
-console.log(sumar(1,2)); // 3;
-console.log(sumar(1,2,3)); // 6
-console.log(sumar(1,2,3,4)); // 10
-console.log(sumar(1,2,3,4,5)); //15
+console.log(sumar(1,2));
+console.log(sumar(1,2,3));
+console.log(sumar(1,2,3,4));
+console.log(sumar(1,2,3,4,5));

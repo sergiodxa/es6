@@ -1,2 +1,2 @@
 
-'use strict';var nombre=Symbol('nombre');var honorifico=Symbol();var persona={};persona[nombre]='Pepito';persona[honorifico]='Don';console.log(persona);console.log(persona[nombre]);console.log(persona[honorifico]);
+'use strict';var _persona;var nombre=Symbol('nombre');var honorifico=Symbol();var persona=(_persona={},_persona[nombre]='Pepito',_persona[honorifico]='Don',_persona);console.log(persona);console.log(persona[nombre]);console.log(persona[honorifico]);

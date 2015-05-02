@@ -7,8 +7,5 @@ Object.observe(persona, changes => {
 });
 
 persona.nombre = 'Pepito';
-// { type: 'update', object: { honorifico: 'Don' }, name: 'nombre', oldValue: 'Jose' }
 persona.honorifico = 'Don';
-// { type: 'add', object: { honorifico: 'Don' }, name: 'honorifico' }
 delete persona.nombre;
-// { type: 'delete', object: { honorifico: 'Don' }, name: 'nombre', oldValue: 'Pepito' }

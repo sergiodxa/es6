@@ -1,11 +1,11 @@
 const nombre = Symbol('nombre');
 const honorifico = Symbol();
 
-let persona = {};
+let persona = {
+  [nombre]: 'Pepito',
+  [honorifico]: 'Don'
+};
 
-persona[nombre] = 'Pepito';
-persona[honorifico] = 'Don';
-
-console.log(persona); // { Symbol(nombre): "Pepito", Symbol(): "Don" }
-console.log(persona[nombre]); // 'Pepito'
-console.log(persona[honorifico]); // 'Don'
+console.log(persona);
+console.log(persona[nombre]);
+console.log(persona[honorifico]);

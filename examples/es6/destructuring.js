@@ -5,11 +5,11 @@ let persona = {
 };
 
 let { nombre, honorifico: titulo } = persona;
-console.log(nombre); // 'Jose'
-console.log(titulo); // 'Don'
+console.log(nombre);
+console.log(titulo);
 
 // arrays
-let fecha     = [24, 4, 2015];
+let fecha    = [24, 4, 2015];
 let [d, , y] = fecha;
-console.log(d); // 24
-console.log(y); // 2015
+console.log(d);
+console.log(y);

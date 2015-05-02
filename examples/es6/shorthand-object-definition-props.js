@@ -1,4 +1,4 @@
-let nombre = 'Jose';
+let nombre  = 'Jose';
 let persona = {
   nombre,
   honorifico: 'Don'
