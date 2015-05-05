@@ -1,6 +1,6 @@
 async function obtenerDatos {
   try {
-    let datos = getJSON('/api/datos');
+    let datos = await getJSON('/api/datos');
 
     console.log(datos); // mostramos el JSON obtenido
   } catch (error) {
