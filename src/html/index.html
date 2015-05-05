@@ -879,6 +879,31 @@ gulp.task('js', function () {
           Ejecutar
         </button>
       </article>
+
+      <article>
+        <h3>WeakMap</h3>
+        <p>
+          Similar a un Map, con la diferencia de que no pueden ser iterados como un Map, no poseen el método clear para vaciarlos completamente y el key debe ser un objeto.
+        </p>
+        <pre data-src="examples/es6/weakmap.js"></pre>
+        <button type="button" data-src="examples/es5/weakmap.js">
+          Ejecutar
+        </button>
+      </article>
+
+      <article>
+        <h3>WeakSet</h3>
+        <p>
+          Similar a un Set, con laa diferencia de que no pueden ser iterador como un Set y no poseen el método clear para vaciarlos completamente. Solo se pueden guardar objetos.
+        </p>
+        <p>
+          Al no se iterables solo sirven para poder asignar objetos a valores boleanos que permite comprobar si un objeto está o no está en el WeakSet.
+        </p>
+        <pre data-src="examples/es6/weakset.js"></pre>
+        <button type="button" data-src="examples/es5/weakset.js">
+          Ejecutar
+        </button>
+      </article>
     </section>
 
     <section>
