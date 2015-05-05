@@ -87,7 +87,10 @@ article {
 }
 article:last-of-type { margin-bottom: 0; }
 
-p { margin: 1em 0; }
+p {
+  clear: both;
+  margin: 1em 0;
+}
 
 figure {
   display: block;
@@ -100,6 +103,8 @@ ul {
   list-style-type: square;
 }
 li { flex-basis: 100%; }
+
+pre { clear: both; }
 
 .button,
 button {

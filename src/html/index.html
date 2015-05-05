@@ -70,7 +70,7 @@
         <p>
           Luego cuando queramos usar Babel podemos usamos el siguiente comando.
         </p>
-        <pre><code>babel archivo.js</code></pre>
+        <pre><code>babel archivo.js -o build.js</code></pre>
         <p>
           Este nos va a convertir el código de archivo.js de ES6 a ES5 y mostrar el resultado en la consola.
         </p>
@@ -81,7 +81,7 @@
       </article>
 
       <article>
-        <h3>Usando Babel con Browserify</h3>
+        <h3>Usandolo con Browserify</h3>
         <p>
           Babel se puede utilizar con <a href="//www.npmjs.com/package/browserify" target="_blank">Browserify</a> gracias a un plugin de este llamado <a href="//www.npmjs.com/package/babelify" target="_blank">Babelify</a>, para esto simplemente instalan Browserify y Babel como dependencia de desarrollo de su proyecto con el siguiente comando.
         </p>
@@ -96,7 +96,7 @@
       </article>
 
       <article>
-        <h3>Usando Babel con Gulp</h3>
+        <h3>Usandolo con Gulp</h3>
         <p>
           Babel también se puede utilizar con <a href="//gulpjs.com/" target="_blank">Gulp.js</a> utilizando el plugin <a href="//www.npmjs.com/package/gulp-babel" target="_blank">gulp-babel</a>, para esto descargan Gulp.js y gulp-babel con el siguiente comando.
         </p>
@@ -112,6 +112,25 @@ gulp.task('js', function () {
     .pipe(babel())
     .pipe(gulp.dest('/build/js/'));
 });</code></pre>
+      </article>
+
+      <article>
+        <h3>Usandolo con Nodemon</h3>
+        <p>
+          Babel también se puede utilizar con <a href="//nodemon.io/" target="_blank">nodemon</a> simplemente agregando algunos parámetros al momento de ejecutar <a href="//npmjs.org/package/nodemon" target="_blank">nodemon</a> usando el siguiente comando:
+        </p>
+        <pre><code>nodemon --exec babel-node -- server.js</code></pre>
+        <p>
+          Con esto podemos usar babel-node para correr nuestra aplicación con Node.js y que cada vez que se realice un cambio se reinicie el servidor.
+        </p>
+      </article>
+
+      <article>
+        <h3>Usandolo con Mocha</h3>
+        <p>
+          Babel también se puede utilizar con <a href="//mochajs.org/" target="_blank">Mocha</a> simplemente agregando algunos parámetros al momento de ejecutar <a href="https://www.npmjs.com/package/mocha" target="_blank">Mocha</a> usando el comando:
+        </p>
+        <pre><code>mocha --compilers js:babel/register</code></pre>
       </article>
     </section>
 
@@ -822,6 +841,41 @@ gulp.task('js', function () {
         </p>
         <pre data-src="examples/es6/symbol-private-props.js"></pre>
         <button type="button" data-src="examples/es5/symbol-private-props.js">
+          Ejecutar
+        </button>
+      </article>
+    </section>
+
+    <section>
+      <h2 id="colecciones">
+        <a href="#colecciones">Colecciones de datos</a>
+      </h2>
+
+      <article>
+        <h3>Map</h3>
+        <p>
+          Los Map son un tipo de estructura de datos que permite relacionar dos datos arbitrarios entre sí y poder facilmente acceder a ellos.
+        </p>
+        <pre data-src="examples/es6/map.js"></pre>
+        <button type="button" data-src="examples/es5/map.js">
+          Ejecutar
+        </button>
+        <p>
+          Son objetos iterables mediante distintas formas, incluyendo la posibilidad de obtener una instancia de un Iterator.
+        </p>
+        <pre data-src="examples/es6/map-multiple.js"></pre>
+        <button type="button" data-src="examples/es5/map-multiple.js">
+          Ejecutar
+        </button>
+      </article>
+
+      <article>
+        <h3>Set</h3>
+        <p>
+          Los Set son otro tipo de estructura de datos que permite en este caso guardar valores arbitrarios, sin necesidad de una llave que sirva para acceder a estos. A cambio de no usar una llave para cada valor estos no se pueden repetir. Al igual que los Map estos son iterables.
+        </p>
+        <pre data-src="examples/es6/set.js"></pre>
+        <button type="button" data-src="examples/es5/set.js">
           Ejecutar
         </button>
       </article>
