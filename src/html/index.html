@@ -948,7 +948,7 @@ gulp.task('js', function () {
         </p>
         <pre data-src="examples/es7/trailing-commas.js"></pre>
         <button type="button" data-src="examples/es5/trailing-commas.js">
-          Ejecutar (solo Google Chrome)
+          Ejecutar
         </button>
       </article>
 
@@ -961,6 +961,9 @@ gulp.task('js', function () {
           Una función definida como asíncrona permite realizar cualquier tarea asíncrona (una petición HTTP por ejemplo) y esperar (await) hasta que se obtenga la respuesta para seguír con el código.
         </p>
         <pre data-src="examples/es7/async-functions.js"></pre>
+        <a href="//babeljs.io/repl/#?experimental=true&evaluate=true&loose=true&spec=false&playground=false&code=function%20getMessage%20()%20%7B%0A%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0A%20%20%20%20setTimeout(function%20()%20%7B%0A%20%20%20%20%20%20resolve('hola%20mundo')%3B%0A%20%20%20%20%7D%2C%201500)%3B%0A%20%20%7D)%3B%0A%7D%0A%0Aasync%20function%20exclamatify%20()%20%7B%0A%20%20try%20%7B%0A%20%20%20%20const%20datos%20%3D%20await%20getMessage()%3B%0A%20%20%20%20return%20%60%24%7Bdatos%7D!%60%3B%0A%20%20%7D%20catch%20(error)%20%7B%0A%20%20%20%20console.log(error)%3B%0A%20%20%7D%0A%7D%0A%0A(async%20function%20()%20%7B%0A%20%20console.log(await%20exclamatify())%3B%0A%7D)()%3B" target="_blank" class="button">
+          Ejecutar
+        </a>
       </article>
     </section>
   </main>

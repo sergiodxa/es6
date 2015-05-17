@@ -1,13 +1,12 @@
-async function obtenerDatos {
+async function exclamatify () {
   try {
-    let datos = await getJSON('/api/datos');
-
-    console.log(datos); // mostramos el JSON obtenido
+    const datos = await getMessage(); // hola mundo
+    return `${datos}!`;
   } catch (error) {
-    console.log(error); // mostramos el error
+    console.log(error);
   }
 }
 
 (async function () {
-  await obtenerDatos();
+  console.log(await exclamatify()); // hola mundo!
 })();
