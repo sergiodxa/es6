@@ -1,13 +1,14 @@
-async function obtenerDatos {
-  try {
-    let datos = await getJSON('/api/datos');
+const app = Object.freeze({
+  init: async function init () {
+    try {
+      const data1 = await getData(); // hola
+      const data2 = `${data1} mundo`;
 
-    console.log(datos); // mostramos el JSON obtenido
-  } catch (error) {
-    console.log(error); // mostramos el error
+      console.log(data2);
+    } catch (error) {
+      console.log(error);
+    }
   }
-}
+});
 
-(async function () {
-  await obtenerDatos();
-})();
+app.init();
